@@ -2,7 +2,7 @@
 
 > React component for snow on your webpage ☃️
 
-![npm](https://img.shields.io/npm/v/resnow.svg)](https://www.npmjs.com/package/resnow)
+[![npm](https://img.shields.io/npm/v/resnow.svg)](https://www.npmjs.com/package/resnow) [![Build Status](https://travis-ci.org/lachlanjc/resnow.svg?branch=master)](https://travis-ci.org/lachlanjc/resnow)
 
 - Used on/extracted from [Hack Club Secret Santa](https://hackclub.com/santa)
 - Code heavily inspired by [`react-snow-effect`](https://github.com/jungledre/react-snow-effect), but updated for React 16, supports server-rendering, & offers more options
@@ -16,6 +16,8 @@ yarn add resnow
 ```
 
 ## Usage
+
+Requires React 16.3 or later.
 
 ```jsx
 import React from 'react'
