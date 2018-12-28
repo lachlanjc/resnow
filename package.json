@@ -53,6 +53,7 @@
   "x0": {
     "static": true,
     "outDir": "site",
-    "title": "resnow"
+    "title": "resnow",
+    "basename": "/resnow"
   }
 }
