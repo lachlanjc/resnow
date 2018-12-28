@@ -4,7 +4,14 @@
   "description": "React component for snow",
   "author": "lachlanjc",
   "license": "MIT",
-  "repository": "lachlanjc/resnow",
+  "homepage": "https://lachlanjc.me/resnow",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lachlanjc/resnow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lachlanjc/resnow/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
