@@ -120,7 +120,7 @@ export default class extends Component {
   }
 
   render() {
-    const { style, ...props } = this.props
+    const { style, color, speed, max, ...props } = this.props
     const sx = {
       margin: 0,
       padding: 0,

@@ -15,11 +15,12 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
+    "dev": "x0 docs -op 8080",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "predeploy": "yarn prepare && x0 build docs",
+    "deploy": "gh-pages -d site"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -27,6 +28,7 @@
     "react-dom": "^16.3.0"
   },
   "devDependencies": {
+    "@compositor/x0": "^6.0.7",
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
@@ -41,9 +43,16 @@
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0"
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "styled-components": "^4.1.3"
   },
   "files": [
+    "README.md",
     "dist"
-  ]
+  ],
+  "x0": {
+    "static": true,
+    "outDir": "site",
+    "title": "resnow"
+  }
 }
